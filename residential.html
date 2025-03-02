@@ -7,6 +7,7 @@
     <title>Residential Electrical Services</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -31,7 +32,144 @@
             <div class="container">
                 <h1>Residential Electrical Services</h1>
                 <p>Quality electrical solutions for homes of all sizes. Our expert electricians provide safe, reliable, and efficient electrical services for your residence.</p>
-                <a href="#contact" class="btn">Request a Quote</a>
+                <a href="#contact" class="btn">Request a Quote <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- Service Details Section -->
+        <section class="about">
+            <div class="container">
+                <h2>Our Residential Services</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>We offer comprehensive electrical services for homes of all sizes. Our team of certified residential electricians is equipped to handle everything from small repairs to complete electrical system installations.</p>
+                        <p>Safety is our top priority. All our residential services are performed to the highest quality standards and in compliance with local and national electrical codes.</p>
+                        
+                        <h3 style="margin-top: 30px; color: var(--primary-color);">Services We Provide:</h3>
+                        <ul class="about-features">
+                            <li>Electrical Panel Upgrades and Replacements</li>
+                            <li>Wiring and Rewiring Services</li>
+                            <li>Lighting Installation and Repair</li>
+                            <li>Ceiling Fan Installation</li>
+                            <li>Outlet and Switch Installation</li>
+                            <li>Surge Protection Systems</li>
+                            <li>Home Generator Installation</li>
+                            <li>Smart Home Electrical Systems</li>
+                            <li>Electrical Safety Inspections</li>
+                            <li>Troubleshooting and Repairs</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1556156653-e5a7668511d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="Residential Electrical Services">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="services">
+            <div class="container">
+                <h2>Why Choose Us for Your Home</h2>
+                <div class="service-categories">
+                    <div class="service-card">
+                        <div class="service-card-image">
+                            <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="Expert Electricians">
+                        </div>
+                        <div class="service-card-content">
+                            <h3><i class="fas fa-certificate" style="color: var(--accent-color);"></i> Expert Technicians</h3>
+                            <p>Our team consists of licensed and certified electricians with years of experience in residential electrical systems.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-image">
+                            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="Quality Materials">
+                        </div>
+                        <div class="service-card-content">
+                            <h3><i class="fas fa-star" style="color: var(--accent-color);"></i> Quality Materials</h3>
+                            <p>We use only high-quality, code-compliant materials for all residential electrical installations and repairs.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-image">
+                            <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80" alt="Customer Service">
+                        </div>
+                        <div class="service-card-content">
+                            <h3><i class="fas fa-smile" style="color: var(--accent-color);"></i> Customer Satisfaction</h3>
+                            <p>We take pride in our exceptional customer service and work tirelessly to ensure complete satisfaction with every job.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Get a Free Estimate</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Us for Residential Services</h3>
+                        <p>Ready to upgrade or repair your home's electrical system? Contact us today for a free estimate or to schedule a service appointment.</p>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p id="company-phone">+1 205-123-4567</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p id="company-email">info@company.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Address</strong>
+                                <p id="company-address">123 Main St, Birmingham, AL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Needed</label>
+                                <select id="service" name="service">
+                                    <option value="">-- Select a Service --</option>
+                                    <option value="panel-upgrade">Electrical Panel Upgrade</option>
+                                    <option value="wiring">Wiring/Rewiring</option>
+                                    <option value="lighting">Lighting Installation</option>
+                                    <option value="ceiling-fan">Ceiling Fan Installation</option>
+                                    <option value="outlets">Outlet/Switch Installation</option>
+                                    <option value="generator">Generator Installation</option>
+                                    <option value="smart-home">Smart Home Systems</option>
+                                    <option value="inspection">Electrical Inspection</option>
+                                    <option value="repair">Electrical Repair</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Request Quote <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -41,7 +179,7 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <h3 id="footer-company-name">Alabama Electrical Services</h3>
-                    <p>Your trusted electrical service provider.</p>
+                    <p>Your trusted electrical service provider for all residential electrical needs.</p>
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
@@ -55,18 +193,33 @@
                 <div class="footer-social">
                     <h3>Connect With Us</h3>
                     <div class="social-icons">
-                        <a href="#" id="facebook-link" target="_blank"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Facebook"></a>
-                        <a href="#" target="_blank"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter"></a>
-                        <a href="#" target="_blank"><img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"></a>
+                        <a href="#" id="facebook-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 <span id="copyright-name">Alabama Electrical Services</span>. All Rights Reserved.</p>
+                <p>&copy; <span id="current-year">2023</span> <span id="copyright-name">Alabama Electrical Services</span>. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Add scrolled class to header when scrolling
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>

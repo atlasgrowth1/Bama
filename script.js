@@ -86,10 +86,19 @@ const updatePageContent = async () => {
         if (facebookLink && company.facebook) {
             facebookLink.href = company.facebook;
         }
+        
+        // Initialize map if it exists
+        const mapElement = document.getElementById('map');
+        if (mapElement && company.latitude && company.longitude) {
+            initMap(company);
+        }
     }
     
     // Ensure all links maintain the URL parameter
     updateLinks(companySlug);
+    
+    // Initialize animation on scroll
+    initScrollAnimation();
 };
 
 // Update all navigation links to maintain the URL parameter
@@ -115,5 +124,74 @@ const updateLinks = (companySlug) => {
     });
 };
 
+// Initialize map using company location data
+const initMap = (company) => {
+    const mapElement = document.getElementById('map');
+    if (!mapElement) return;
+    
+    // Create a simple map representation using the coordinates
+    const latitude = company.latitude;
+    const longitude = company.longitude;
+    
+    // Create an iframe with OpenStreetMap 
+    mapElement.innerHTML = `
+        <iframe 
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            scrolling="no" 
+            marginheight="0" 
+            marginwidth="0" 
+            src="https://www.openstreetmap.org/export/embed.html?bbox=${longitude - 0.01}%2C${latitude - 0.01}%2C${longitude + 0.01}%2C${latitude + 0.01}&amp;layer=mapnik&amp;marker=${latitude}%2C${longitude}" 
+            style="border: none; border-radius: 10px;">
+        </iframe>
+        <div style="text-align: center; margin-top: 10px;">
+            <a href="${company.location_link}" target="_blank" class="btn" style="font-size: 0.9rem; padding: 8px 15px;">
+                <i class="fas fa-map-marker-alt"></i> View on Google Maps
+            </a>
+        </div>
+    `;
+};
+
+// Initialize animation for elements when they scroll into view
+const initScrollAnimation = () => {
+    const animateElements = document.querySelectorAll('.service-card, .info-item, .about-image');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    animateElements.forEach(el => {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+};
+
 // Execute when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', updatePageContent);
+document.addEventListener('DOMContentLoaded', () => {
+    updatePageContent();
+    
+    // Add scrolled class to header when scrolling
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+    
+    // Update current year in footer
+    const currentYearElement = document.getElementById('current-year');
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
+});
