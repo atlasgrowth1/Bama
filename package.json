@@ -1,9 +1,11 @@
 {
-  "name": "nodejs",
+  "name": "bama",
   "version": "1.0.0",
-  "description": "",
+  "description": "Website with different service pages",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,5 +14,8 @@
   "dependencies": {
     "@types/node": "^18.0.6",
     "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
