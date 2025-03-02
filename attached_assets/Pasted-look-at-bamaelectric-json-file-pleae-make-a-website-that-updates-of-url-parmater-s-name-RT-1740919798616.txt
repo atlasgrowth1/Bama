@@ -1,0 +1,37 @@
+look at bamaelectric.json file pleae make a website that updates of url parmater s [
+{
+"name": "RTR Electric, LLC",
+"site": "https://rtrelectricllc.com/",
+"phone": "+1 205-482-4207",
+"street": "216 Business Center Dr",
+"city": "Birmingham",
+"postal_code": 35244.0,
+"state": "Alabama",
+"latitude": 33.348502,
+"longitude": -86.7903239,
+"rating": 4.9,
+"reviews": 111.0,
+"reviews_link": "https://search.google.com/local/reviews?placeid=ChIJDZu_K2KnZGYRfkpBZ9rEapE&q=electrician,+35244,+Birmingham,+AL,+US&authuser=0&hl=en&gl=US",
+"location_link": "https://www.google.com/maps/place/RTR+Electric%2C+LLC/@33.348501999999996,-86.79032389999999,14z/data=!4m8!1m2!2m1!1sRTR+Electric%2C+LLC!3m4!1s0x6664a7622bbf9b0d:0x916ac4da67414a7e!8m2!3d33.348501999999996!4d-86.79032389999999",
+"email_1": "info@rtrelectricllc.com",
+"facebook": "https://www.facebook.com/RTR-Electric-LLC-369668063856427/",
+"s": "rtrelectricllc"
+},
+{
+"name": "Mr. Electric of Birmingham",
+"site": "https://mrelectric.com/birmingham",
+"phone": "+1 205-208-7479",
+"street": "660 University Blvd",
+"city": "Birmingham",
+"postal_code": 35233.0,
+"state": "Alabama",
+"latitude": 33.4962596,
+"longitude": -86.8175896,
+"rating": 4.8,
+"reviews": 699.0,
+"reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ80BdhYkNiYgRA8IWqSw1F24&q=electrician,+35244,+Birmingham,+AL,+US&authuser=0&hl=en&gl=US",
+"location_link": "https://www.google.com/maps/place/Mr.+Electric+of+Birmingham/@33.4962596,-86.81758959999999,14z/data=!4m8!1m2!2m1!1sMr.+Electric+of+Birmingham!3m4!1s0x88890d89855d40f3:0x6e17352ca916c203!8m2!3d33.4962596!4d-86.81758959999999",
+"email_1": "gsmalley@mrelectric.com",
+"facebook": "http://www.facebook.com/MrElectricFan",
+"s": "mrelectricofbirmingham"
+},make e a home apge iwth hero sectoin about section services secion whcih is just an overview to residenal indusrrial commerical page cause it has a learn more button that leads to that page make sure url aprmater sticks for these new pages. on those new pages just make a hero section for now
